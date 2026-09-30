@@ -1,0 +1,364 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow,noarchive,nosnippet">
+<title>Digital Presence Audit &middot; Independent Solar Consultants Ltd &middot; AG1 Consulting</title><style>
+:root{--bg:#0d1117;--panel:#161b22;--ink:#e6edf3;--mut:#9aa7b4;--line:#2a3340;--accent:#2f81f7;
+  --good:#3fb950;--bad:#f85149;--gradF:#f85149;--gradD:#e8702a;--gradC:#d29922;--gradB:#3fb950;--gradA:#2ea043;}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.5;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1080px;margin:0 auto;padding:0 22px}
+.eyebrow{letter-spacing:.18em;text-transform:uppercase;font-size:12px;color:var(--mut);font-weight:600}
+header{padding:46px 0 28px;border-bottom:1px solid var(--line);background:radial-gradient(1200px 400px at 70% -10%,rgba(47,129,247,.18),transparent)}
+h1{font-size:30px;font-weight:800;margin:10px 0 6px;letter-spacing:-.01em}
+.sub{color:var(--mut);font-size:15px}
+.hero{display:grid;grid-template-columns:300px 1fr;gap:26px;align-items:center;margin:34px 0 8px}
+@media(max-width:760px){.hero{grid-template-columns:1fr}}
+.gradecard{border:1px solid var(--line);border-radius:18px;padding:26px;text-align:center;position:relative;overflow:hidden}
+.gc-F{background:linear-gradient(160deg,#2a1410,#1c2330)}.gc-D{background:linear-gradient(160deg,#2a1c10,#1c2330)}
+.gc-C{background:linear-gradient(160deg,#2a2410,#1c2330)}.gc-B{background:linear-gradient(160deg,#102a1a,#1c2330)}
+.bigletter{font-size:96px;font-weight:900;line-height:1;position:relative}
+.bl-F{color:var(--gradF);text-shadow:0 0 40px rgba(248,81,73,.45)}
+.bl-D{color:var(--gradD);text-shadow:0 0 40px rgba(232,112,42,.45)}
+.bl-C{color:var(--gradC);text-shadow:0 0 40px rgba(210,153,34,.45)}
+.score100{font-size:18px;color:var(--mut);margin-top:6px;position:relative}
+.heroread h2{font-size:21px;font-weight:800;margin-bottom:10px}
+.heroread p{color:var(--mut);font-size:15.5px}
+.heroread .tag{display:inline-block;margin-top:14px;padding:6px 12px;border:1px solid var(--line);border-radius:999px;font-size:13px;color:var(--ink);background:var(--panel)}
+section{padding:34px 0;border-bottom:1px solid var(--line)}
+.h{font-size:13px;color:var(--mut);text-transform:uppercase;letter-spacing:.14em;font-weight:700;margin-bottom:18px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media(max-width:760px){.grid{grid-template-columns:1fr}}
+.row{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px 16px;display:grid;grid-template-columns:1fr auto;gap:10px;align-items:center}
+.rname{font-weight:600;font-size:15px}
+.bar{height:7px;background:#0b0f15;border-radius:99px;margin-top:9px;overflow:hidden}
+.fill{height:100%;border-radius:99px}
+.badge{font-weight:800;font-size:15px;min-width:46px;height:46px;border-radius:10px;display:flex;align-items:center;justify-content:center;color:#0d1117}
+.gF{background:var(--gradF)}.gD{background:var(--gradD)}.gC{background:var(--gradC)}.gB{background:var(--gradB);color:#06210f}.gA{background:var(--gradA);color:#06210f}
+.sc{font-size:12px;color:var(--mut);margin-top:3px}
+.flag{background:linear-gradient(160deg,#2a1410,#161b22);border:1px solid #6f2a1f;border-radius:14px;padding:20px 22px;margin-bottom:14px}
+.flag .lab{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--bad);font-weight:700;margin-bottom:8px}
+.win{background:linear-gradient(160deg,#0f2417,#161b22);border:1px solid #1f6f3a;border-radius:14px;padding:20px 22px;margin-bottom:14px}
+.win .lab{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--good);font-weight:700;margin-bottom:8px}
+.warn{background:linear-gradient(160deg,#2a2410,#161b22);border:1px solid #6f5a1f;border-radius:14px;padding:20px 22px;margin-bottom:14px}
+.warn .lab{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--gradC);font-weight:700;margin-bottom:8px}
+.flag p,.win p,.warn p{color:var(--mut);font-size:14.5px;margin-bottom:9px}
+.flag p:last-child,.win p:last-child,.warn p:last-child{margin-bottom:0}
+.flag b,.win b,.warn b{color:var(--ink)}
+.flag ul,.win ul,.warn ul{margin:0 0 9px 20px;color:var(--mut);font-size:14.5px}
+.flag li,.win li,.warn li{margin-bottom:6px}
+.code{background:#0b0f15;border:1px solid var(--line);border-radius:8px;padding:14px 16px;margin:12px 0;font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:12.5px;line-height:1.85;color:var(--mut);overflow-x:auto}
+.code .ph{color:#ff9d94;font-weight:700}.code .ok{color:#84e0a8;font-weight:700}.code .c{color:#5b6672}
+.cmp{width:100%;border-collapse:collapse;font-size:14px;background:var(--panel);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.cmp th{text-align:left;padding:11px 14px;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--mut);border-bottom:1px solid var(--line);font-weight:700}
+.cmp td{padding:11px 14px;border-bottom:1px solid var(--line);color:var(--mut);vertical-align:top}
+.cmp tr:last-child td{border-bottom:none}.cmp td b{color:var(--ink)}.cmp tr.you td{background:#241a12}
+.cmp .yes{color:var(--good);font-weight:700}.cmp .no{color:var(--bad);font-weight:700}
+.opp{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+@media(max-width:760px){.opp{grid-template-columns:1fr}}
+.ocard{background:linear-gradient(160deg,#0f2417,#161b22);border:1px solid #1f6f3a;border-radius:14px;padding:20px;text-align:center}
+.ocard .lab{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--mut)}
+.ocard .big{font-size:30px;font-weight:900;color:var(--good);margin:8px 0 2px}
+.ocard .small{font-size:13px;color:var(--mut)}
+.oppnote{color:var(--mut);font-size:14px;margin-top:14px}.oppnote b{color:var(--ink)}
+.arrow{display:flex;align-items:center;justify-content:center;gap:18px;margin:6px 0 2px;flex-wrap:wrap}
+.pill{font-size:60px;font-weight:900;line-height:1}
+.pill.from-F{color:var(--gradF)}.pill.from-D{color:var(--gradD)}.pill.from-C{color:var(--gradC)}
+.pill.to{color:var(--gradA)}
+.pilllab{font-size:12px;color:var(--mut);text-align:center;text-transform:uppercase;letter-spacing:.1em}
+.ar{font-size:34px;color:var(--mut)}
+ul.road{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:10px}
+@media(max-width:760px){ul.road{grid-template-columns:1fr}}
+ul.road li{background:var(--panel);border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:8px;padding:11px 14px;font-size:14.5px}
+.road2 li{border-left-color:var(--good)}
+.cta{text-align:center;padding:40px 0 56px}
+.cta h2{font-size:22px;font-weight:800;margin-bottom:8px}
+.cta p{color:var(--mut);font-size:15px}
+footer{color:var(--mut);font-size:12.5px;text-align:center;padding:22px 0 40px;line-height:1.7}
+.gscale{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:26px 26px 20px;margin-top:16px}
+.gscale .gtitle{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--mut);font-weight:700;margin-bottom:26px;text-align:center}
+.gtrack{position:relative;height:14px;border-radius:8px;background:linear-gradient(90deg,#f85149 0%,#f85149 18%,#e3833c 34%,#d4a72c 52%,#7ec46a 74%,#3fb950 100%);margin:0 4px}
+.gmark{position:absolute;top:-46px;transform:translateX(-50%);text-align:center;white-space:nowrap}
+.gmark .gm-lab{font-size:10.5px;text-transform:uppercase;letter-spacing:.1em;color:var(--mut);font-weight:700}
+.gmark .gm-val{font-size:19px;font-weight:900;line-height:1.15}
+.gmark:after{content:"";position:absolute;left:50%;top:100%;width:2px;height:22px;transform:translateX(-50%);background:currentColor;opacity:.75}
+.gmark.now{color:var(--bad)}.gmark.now .gm-val{color:var(--bad)}
+.gmark.proj{color:var(--good)}.gmark.proj .gm-val{color:var(--good)}
+.gmark.proj{top:auto;bottom:-52px}
+.gmark.proj:after{top:auto;bottom:100%}
+.gdot{position:absolute;top:50%;width:16px;height:16px;border-radius:50%;transform:translate(-50%,-50%);border:3px solid #0d1117}
+.gdot.now{background:var(--bad)}.gdot.proj{background:var(--good)}
+.gticks{display:flex;justify-content:space-between;margin:66px 4px 0;font-size:11px;letter-spacing:.08em;color:var(--mut);font-weight:700}
+@media(max-width:620px){.gmark .gm-lab{font-size:9px}.gmark .gm-val{font-size:16px}}
+
+/* ---------- injected asset nav ---------- */
+/* display/padding/margin are declared explicitly so a page carrying its own bare
+   nav{} element rule (concept mockups do) cannot restyle the AG1 bar. */
+.agnav{display:block;padding:0;margin:0;position:sticky;top:0;z-index:80;background:rgba(13,17,23,.92);backdrop-filter:saturate(1.5) blur(10px);border-bottom:1px solid var(--line)}
+.agnav .inner{max-width:1080px;margin:0 auto;padding:0 22px;display:flex;flex-wrap:wrap;align-items:center;gap:6px}
+.agnav a{display:inline-block;padding:12px 14px;font-size:14px;font-weight:600;color:var(--mut);text-decoration:none;border-bottom:2px solid transparent;transition:color .15s,border-color .15s}
+.agnav a:hover{color:var(--ink);border-bottom-color:var(--accent)}
+.agnav a.on{color:var(--ink);border-bottom-color:var(--accent)}
+.agnav a.ext{color:var(--accent)}
+.agnav a.ext:hover{color:#fff}
+@media(max-width:560px){.agnav .inner{padding:0 14px}.agnav a{padding:10px 9px;font-size:13px}}
+</style></head><body>
+<nav class="agnav"><div class="inner"><a href="assets.html">All Assets</a><a href="./" class="on">Audit</a><a href="https://andrei170.github.io/independent-solar-demo/">Concept Page</a></div></nav>
+
+<header>
+  <div class="wrap">
+    <div class="eyebrow">Digital Presence Audit &middot; Independent Solar Consultants Ltd &middot; UK</div>
+    <h1>You Are Measuring More Carefully Than Almost Anybody We Audit. Which Is Why The Two Problems Here Are Worth Your Time.</h1>
+    <div class="sub">Prepared for Justin Dring &middot; 30 September 2026 &middot; AG1 Consulting</div>
+
+    <div class="hero">
+      <div class="heroread">
+        <h2>This is not the usual audit, because you do not have the usual problems.</h2>
+        <p><b>You run Google Ads with conversion tracking, GA4, Hotjar and Microsoft Clarity.</b> Most firms we look
+        at have none of that. We are not going to tell you to install analytics.</p>
+        <p><b>There are two things on the site that we would want somebody to tell us about if it were ours.</b>
+        One of them touches directly on trust, which Ruchi says is the thing you care most about.</p>
+        <div class="tag">Measured from independent-solar-consultants.co.uk on 30 September 2026 &bull; 116 URLs in the published sitemap</div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <div class="h">The Scorecard</div>
+    <div class="rows">
+      <div class="row"><div><div class="rname">Review schema vs visible reviews</div><div class="sc">Markup claims 127 reviews at 4.9. Nothing visible on the page.</div></div><div class="badge gF">F</div></div>
+      <div class="row"><div><div class="rname">Page depth across the site</div><div class="sc">116 URLs published, most pages 280&ndash;450 words</div></div><div class="badge gD">D</div></div>
+      <div class="row"><div><div class="rname">Homepage depth</div><div class="sc">468 words for a consultancy selling considered advice</div></div><div class="badge gD">D+</div></div>
+      <div class="row"><div><div class="rname">Domain consistency</div><div class="sc">The .com you gave Ruchi redirects to a different hyphenated .co.uk</div></div><div class="badge gC">C</div></div>
+      <div class="row"><div><div class="rname">Enquiry qualification</div><div class="sc">One form. Nothing that separates a serious enquiry from a browser.</div></div><div class="badge gC">C&minus;</div></div>
+      <div class="row"><div><div class="rname">Click-to-call</div><div class="sc">One tel: link across the homepage</div></div><div class="badge gC">C</div></div>
+      <div class="row"><div><div class="rname">Conversion tracking</div><div class="sc">Google Ads AW- tag live and firing</div></div><div class="badge gA">A</div></div>
+      <div class="row"><div><div class="rname">Analytics depth</div><div class="sc">GA4, Hotjar and Microsoft Clarity all installed</div></div><div class="badge gA">A+</div></div>
+      <div class="row"><div><div class="rname">Structured data coverage</div><div class="sc">Organization, Service, Offer, Breadcrumb, WebPage, Person &mdash; unusually complete</div></div><div class="badge gA">A</div></div>
+      <div class="row"><div><div class="rname">Meta description &amp; canonical</div><div class="sc">Both present and correct</div></div><div class="badge gA">A</div></div>
+      <div class="row"><div><div class="rname">Site architecture</div><div class="sc">Clear separation of residential, commercial, QA, design, claims</div></div><div class="badge gA">A&minus;</div></div>
+    </div>
+    <div class="win">
+      <div class="lab">Genuinely: the measurement setup is better than most agencies run</div>
+      <p><b>Google Ads conversion tracking, GA4, Hotjar and Clarity together means you can see what people do, not
+      just how many arrived.</b> Almost nobody we audit has session recording at all.</p>
+      <p><b>So when you ask about price per lead versus a percentage, you are one of the few people we speak to who
+      could actually hold either model to account.</b> That matters and we will come back to it on the call.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="h">Finding 1 &mdash; Your Site Tells Google You Have 127 Reviews At 4.9. There Are None On The Page.</div>
+    <div class="code">
+  STRUCTURED DATA SERVED ON THE HOMEPAGE, 30 SEPTEMBER 2026
+
+  "@type"        : "AggregateRating"
+  "ratingValue"  : <span class="ph">"4.9"</span>
+  "reviewCount"  : <span class="ph">"127"</span>
+  "bestRating"   : "5"
+  review author  : <span class="ph">"Sarah Johnson"</span>
+
+  WHAT IS ACTUALLY VISIBLE ON THAT PAGE
+
+  Star ratings shown to a visitor      <span class="ph">0</span>
+  Review text shown to a visitor       <span class="ph">0</span>
+  The word "review" in visible copy    <span class="ph">2</span>
+    </div>
+    <div class="warn">
+      <div class="lab">This breaches Google's own structured data policy, whatever the truth of the numbers</div>
+      <p><b>Google's rules are explicit that review markup must be for reviews visible to users on that page.</b>
+      Marking up ratings that a visitor cannot see is against their guidelines regardless of whether those ratings
+      are genuine.</p>
+      <p><b>The exposure is a manual action or loss of rich results</b>, and you are spending on Google Ads from the
+      same domain, so it is not a corner of the business you want a policy problem in.</p>
+    </div>
+    <div class="warn">
+      <div class="lab">And there is a second question we cannot answer for you</div>
+      <p><b>We do not know whether 127 reviews at 4.9 is real.</b> We have not seen your review records and we are
+      not going to assume either way.</p>
+      <p><b>But the single named author in the markup is &ldquo;Sarah Johnson&rdquo;</b>, and that is the sort of
+      name that arrives in a website template as filler. If that is what it is, it is the same kind of leftover we
+      find on a lot of sites &mdash; except that this one is a claim about your reputation.</p>
+      <p><b>Ruchi's note says you are very big on trust with clients.</b> That is exactly why we led with this. If
+      the numbers are real, publish the reviews and the markup becomes an asset. If they are not, it needs taking
+      out today.</p>
+    </div>
+    <div class="win">
+      <div class="lab">The upside if the reviews do exist</div>
+      <p><b>You would get star ratings showing in search results and potentially in your ads</b>, which is one of the
+      few things that lifts click-through without lifting spend.</p>
+      <p><b>Right now you are carrying all of the risk of the markup and none of the benefit</b>, because the
+      reviews are not on the page for Google to validate against.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="h">Finding 2 &mdash; 116 Pages, Most Of Them Around 300 Words</div>
+    <div class="code">
+  PUBLISHED SITEMAP:  <span class="ok">116 URLs</span>
+
+  WORD COUNT, PAGES SAMPLED
+
+  /claims                    442
+  /book-consultation         399
+  /services/commercial       364
+  <span class="ph">/services                  320</span>
+  <span class="ph">/design-assessment         319</span>
+  <span class="ph">/free-quote                309</span>
+  <span class="ph">/post-install-qa           306</span>
+  <span class="ph">/contact                   278</span>
+  <span class="ph">/  (homepage)              468</span>
+
+  <span class="ph">A large site made of small pages.</span>
+    </div>
+    <div class="flag">
+      <div class="lab">This is the shape search engines have spent three years penalising</div>
+      <p><b>A hundred and sixteen pages averaging a few hundred words is the signature of scaled content</b>, and
+      Google's helpful content work has been aimed squarely at that pattern since 2023.</p>
+      <p><b>The irony is that you are the one business where depth would be easy.</b> You sell feasibility studies,
+      yield modelling, design assessment and post-install QA. That is technical work with genuinely useful things to
+      say, and the pages describing it are three hundred words long.</p>
+    </div>
+    <div class="win">
+      <div class="lab">What we would do instead of adding more pages</div>
+      <p><b>Take the eight or ten pages that actually earn money and make them properly deep.</b> Post-install QA at
+      306 words could be the most useful page on the UK internet for somebody who suspects their install was done
+      badly.</p>
+      <p><b>That also feeds the thing you told Ruchi you want.</b> A page that answers a technical question in
+      detail attracts somebody with a technical problem, and that person is a different sort of enquiry from
+      somebody who typed &ldquo;free solar quote&rdquo;.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="h">Finding 3 &mdash; Your Cancellation Problem Is A Qualification Problem, And It Is Fixable At The Form</div>
+    <div class="code">
+  WHAT RUCHI RECORDED FROM YOUR CALL
+
+  "some of his clients are very unreliable, they cancel last minute
+   or even once scaffolding has been put up"
+
+  "wants a lot of leads but good quality reliable ones"
+
+  Currently around <span class="ok">3-5 clients a week</span>
+
+  WHAT THE SITE CURRENTLY ASKS AN ENQUIRER
+
+  Forms on the homepage        <span class="ph">1</span>
+  Qualifying questions         <span class="ph">none found</span>
+  Any commitment step          <span class="ph">none found</span>
+    </div>
+    <div class="warn">
+      <div class="lab">Somebody who cancels after the scaffolding is up was never committed at the enquiry</div>
+      <p><b>That is not a bad-luck problem, it is a filtering problem, and the filter belongs at the front.</b> By
+      the time scaffolding is standing you have spent real money on somebody who was never going to proceed.</p>
+      <p><b>A form that asks nothing gets you everybody.</b> More leads through that same form gets you more of
+      exactly the enquiry you say is causing the trouble.</p>
+    </div>
+    <div class="win">
+      <div class="lab">What actually filters, in order of how hard it bites</div>
+      <ul class="road">
+        <li><b>Questions only a serious person will answer.</b> Property type, roof or ground, timescale, whether
+        they have had a survey, whether they own the building. Three extra fields cuts casual enquiries sharply.</li>
+        <li><b>Making the next step cost something small.</b> You already have a Book &amp; Pay page. A paid
+        consultation, even a token one, is the single most reliable filter there is.</li>
+        <li><b>Scoring the enquiry before you call it</b>, so the ones worth your time surface first rather than
+        being worked in the order they arrived.</li>
+        <li><b>A deposit or a signed scope before scaffolding is ordered.</b> That is a process change rather than a
+        website change, and it is the one that stops the expensive version of the problem.</li>
+      </ul>
+    </div>
+    <div class="flag">
+      <div class="lab">Which is also the honest answer to your pricing question</div>
+      <p><b>Ruchi says you asked whether it would be price per lead or a percentage of clients.</b> We would not
+      quote you per lead. Paying per lead pays whoever supplies them to send more, which is the mechanism that
+      produced your cancellation problem in the first place.</p>
+      <p><b>We are not putting numbers in this document</b> &mdash; that is a conversation for Friday once we know
+      which of the above you actually want.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="h">Finding 4 &mdash; The Domain You Gave Us Is Not The Domain You Run</div>
+    <div class="code">
+  WHAT YOU GAVE RUCHI
+  independentsolarconsultants.com
+
+  WHAT IT RESOLVES TO
+  <span class="ok">https://independent-solar-consultants.co.uk</span>   (redirect)
+
+  Canonical on the live site:
+  <span class="ok">https://independent-solar-consultants.co.uk</span>
+    </div>
+    <div class="flag">
+      <div class="lab">The redirect works, so this is tidiness rather than breakage</div>
+      <p><b>Both resolve and the canonical is set correctly to the .co.uk, which is the right call.</b> Nothing is
+      broken.</p>
+      <p><b>It is worth knowing which one is on your vans, your email signature and your ads</b>, because the
+      hyphenated version is harder to say on the phone and easier to mistype. If the .com is the one people are
+      given verbally, that is the one worth keeping front of house.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="h">What We Would Do, In Order</div>
+    <ul class="road">
+      <li><b>Resolve the review markup this week.</b> Either publish the reviews so the 4.9 is visible and valid, or
+      remove the AggregateRating. Leaving it as it is carries risk on a domain you are spending ad money from.</li>
+      <li><b>Put real qualification into the enquiry route.</b> This is the one that addresses the cancellations
+      rather than the volume, and it is the opposite of buying more leads.</li>
+      <li><b>Deepen eight to ten pages rather than adding to the 116.</b> Starting with post-install QA and claims,
+      because those attract people with a specific problem and a reason to pay.</li>
+      <li><b>Decide what you want turning on and off</b>, since Ruchi noted you want that control. Worth being
+      concrete on Friday about what the on and off states actually are.</li>
+      <li><b>Leave the analytics alone.</b> It is already better than what we would have proposed.</li>
+    </ul>
+  </div>
+</section>
+
+<div class="cta">
+  <div class="wrap">
+    <h2>You told Ruchi trust is the thing. Your homepage claims 127 reviews and shows none of them.</h2>
+    <p>That is the first thing we would fix, and it costs nothing.</p>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap">
+    Prepared by Andrei Givero &middot; AG1 Consulting &middot; 30 September 2026, for Justin Dring at Independent
+    Solar Consultants Ltd.
+    <b>Every statement about the website was read directly from independent-solar-consultants.co.uk's own served
+    pages, structured data and published sitemap on 30 September 2026 and is reproducible. Word counts exclude
+    scripts and markup. Items recorded as &ldquo;none found&rdquo; describe what a static read of the served HTML
+    returned and are not proof of absence &mdash; content injected by script after page load would not appear in
+    that read.</b>
+    <b>&#9888; ON THE REVIEW MARKUP: AG1 has NOT verified whether the 127 reviews or the 4.9 rating are genuine, has
+    NOT seen Independent Solar Consultants' review records, and makes NO allegation that any review is fabricated.
+    The findings stated are narrow and factual: the AggregateRating markup is served on the homepage, no star rating
+    or review text was visible in that page's rendered content, and the only review author named in the markup is
+    "Sarah Johnson". The policy point stands regardless of whether the underlying reviews exist.</b>
+    <b>&#9888; AG1 is not a law firm and this is not legal, regulatory or advertising-compliance advice. Any
+    question about advertising claims under UK rules should go to a qualified adviser.</b>
+    <b>&#9888; Google's structured data and helpful content policies are Google's, may change without notice, and
+    AG1 does not control or speak for how Google applies them. No statement here predicts a penalty, a manual action
+    or a ranking outcome.</b>
+    <b>&#9888; Business details &mdash; reliance on referrals, client cancellations including after scaffolding was
+    erected, and around three to five clients a week &mdash; are as reported to Ruchi on 23 September 2026 and have
+    NOT been independently verified by AG1.</b>
+    <b>&#9888; No ranking, enquiry, conversion, cancellation-rate or revenue outcome is promised, forecast or
+    guaranteed anywhere in this document, and no pricing is proposed in it.</b>
+    Product and company names are used for identification only and belong to their respective owners.
+  </div>
+</footer>
+</body></html>
